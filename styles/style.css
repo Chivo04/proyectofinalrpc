@@ -1,0 +1,452 @@
+*{
+    Margin: 0;
+    padding:0; }
+
+.flecha_arriba{
+    height: 50px;
+    width: 50px;
+    margin: 5px; }
+
+    /* Body */
+
+body{
+    background-color: white;
+    font-family: sans-serif;
+    padding: 108px 0 0 0;
+    min-height: 100vh;}
+
+    /*Sección Header Principal*/
+
+.navbar{
+    width: 100%;
+    padding: 6px 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(125, 161, 161);
+    margin-right: 5px;}
+
+.logo{
+   height: 96px;
+   width: 96px;
+   margin-left: 7px;}
+
+.logo_texto{
+    display: flex;
+    align-items: center;}
+
+.rpc{
+    margin-left: 5px;}
+
+a{
+    text-decoration: none;
+    color: rgb(23, 21, 160);
+    font-weight: 550;}
+
+ul{
+    list-style: none;
+    font-size: 0;}
+
+li{
+    display: inline-block;
+    width: auto;
+    position: relative;
+    font-size: 17px;
+    margin: 5px;}
+
+ul .sub-lista{
+    position: absolute;
+    display: none;}
+
+ul .sub-lista li{
+    display: block;}
+
+ul li:hover .sub-lista{
+    display:block;}
+
+.container a:hover{
+    color:red}
+
+.menu_link:hover{
+    background-color: #2c6791;
+    transition: 0.5s;}
+    
+.menu_link{
+    padding: 8px 3px;
+    border-radius: 5px;}
+    
+.sub-lista:hover{
+    background-color: #bbb5a8;
+    transition: 0.5s;}
+
+.sub-lista{
+    padding: 8px 3px;
+    border-radius: 5px;}
+
+    /* Sección Presentación*/
+
+.presentacion{
+    height: 480px;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;}
+
+.presentacion h1{
+    font-size: 50px;
+    color: blue;
+    font-style: oblique;
+    text-align: center;}
+
+.video{
+    border: 5px solid red;
+    width: 560px;
+    height:320px;}
+
+    /* Sección Nosotros*/
+ 
+.nosotros{
+    height: 390px;
+    font-size: 8pt;}
+
+.nosotros_interno{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;}
+
+.nosotros h2{
+    color: rgb(47, 50, 255);
+	font-size: 50px;
+	text-align: center;}
+
+article p{
+    text-align: center;
+    font-size: 30px;
+    font-family: "Comic Sans MS", sans-serif;}
+
+article img{
+    width: 400px;
+    height:230px;}
+
+    /* Seccion Testimonios */
+
+#testimonios h2{
+    color: rgb(47, 50, 255);
+    font-size: 50px;
+    text-align: center;}
+
+#testimonios p{
+    font-style: italic;
+    font-size: 20px;
+    text-align:inherit;
+    color: black;
+    margin:3px;
+    border-color: #aaaaaa;
+    border-width: 3px;
+    border-style: solid;}
+
+.test_1{
+    background-color: aquamarine;}
+
+.test_2{
+    background-color: rgb(201, 248, 203);}
+
+.test_3{
+    background-color: rgb(236, 252, 191);}
+
+.test_4{
+    background-color: rgb(241, 219, 245);}
+
+.test_5{
+    background-color: white;}
+
+.test_6{
+    background-color: pink;}
+
+    /* GRID a Testimonios*/
+
+.testimonios_cajas{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 5px;
+    justify-items: center;
+    font-size: 15px;}
+
+    /*Sección Contacto*/
+
+#contacto{
+    height: 490px;
+    font-size: 8pt;}
+
+#contacto h2{
+    color: rgb(47, 50, 255);
+    font-size: 50px;
+    text-align: center;}
+
+.formulario{
+    display:flex;
+    justify-content: center;}
+
+    /*Footer*/
+
+.pie_pagina{
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    background-color: rgb(125, 161, 161);}
+
+.pie_pagina a{
+    width: 45px;
+    height: 45px;
+    text-align: center;
+   padding-top: 8px;
+   color: blue;}
+
+.pie_pagina{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    font-size: 28px;}
+
+    /* GRID a Páginas de Profesionales */
+
+.profesionales_cajas{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 5px;
+    justify-items: center;
+    font-size: 15px;}
+
+.profesionales_int{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: #aaaaaa solid;}
+
+.profesionales_cajas img{
+    width:200px;
+    height:200px;
+    margin: 5px;
+    border-style: groove;
+    border-color: rgb(205, 182, 226);}
+
+.profesionales_tit{
+    margin: 15px;
+    text-align: center;
+    color: rgb(47, 50, 255);
+    font-size: 35px;}
+
+
+    /* Media Queries */
+
+@media only screen and (max-width: 768px){
+
+.flecha_arriba{
+    display:none}
+       
+    /* Sección Encabezado */
+
+.navbar{
+    flex-direction: column;
+    align-items: center;}
+
+.logo{
+    height: 85px;
+    width: 85px;
+    margin-left: 2px;}
+
+li{
+    font-size: 18px;}
+
+    /* Sección Presentacion */
+
+.presentacion{
+    height: 381px;
+    justify-content: space-evenly;
+    padding-top:10px;}
+
+.presentacion h1{
+    font-size: 31px;}
+
+.video{
+    border: 5px solid rgb(129, 104, 104);
+    width: 425px;
+    height:245px;
+    border-radius: 10px;}
+
+    /* Sección Nosotros */
+
+.nosotros{
+    height: 265px;}
+
+.nosotros h2{
+	font-size: 36px;
+    padding: 10px;}
+
+.nosotros_interno img{
+   width: 251px;
+   height:148px; 
+   border: 5px groove rgb(129, 104, 104); 
+   border-radius: 15px;}
+
+.nosotros_interno p{
+    font-size: 23px; }
+
+.flecha_arriba {
+    height: 35px;
+    width: 35px;
+    margin: 6px; }
+
+    /* Sección Testimonios */
+
+#testimonios h2{
+   font-size: 36px;}
+
+.testimonios_cajas{
+    font-size: 6px;}  
+
+.testimonios_cajas{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 2px;
+    justify-items: center;}
+
+#testimonios p{
+  font-style: talic;
+  font-size: 16px;}
+
+    /* Sección Contacto */
+
+#contacto{
+    height: 370px;}
+
+#contacto h2{
+    font-size: 29px;}
+    
+    /* Footer */
+
+.pie_pagina a{
+    height: 32px;}
+
+.pie_pagina{
+    height: 40px;
+    font-size: 25px;}
+
+    /* PAGINAS PROFESIONALES */
+
+.profesionales_cajas{
+    grid-template-columns: repeat(2, 1fr);}
+    
+.profesionales_tit{
+    padding-top: 20px;
+    font-size: 24px;} 
+}
+
+@media only screen and (max-width: 576px){
+
+    /* PAGINA PRINCIPAL */
+
+.flecha_arriba{
+    display:none}
+
+    /* Sección Encabezado */
+
+.navbar{
+    flex-direction: column;
+    align-items: center;}
+
+.logo{
+    height: 85px;
+    width: 85px;
+    margin-left: 2px;}
+
+li{
+    font-size: 13px;}
+
+    /* Sección Presentacion */
+
+.presentacion{
+    height: 381px;
+    justify-content: space-evenly;
+    padding-top:10px;}
+
+.presentacion h1{
+    font-size: 22px;}
+
+.video{
+    border: 5px solid rgb(129, 104, 104);
+    width: 398px;
+    height:223px;}
+
+    /* Sección Nosotros */
+
+.nosotros{
+    height: 190px;
+    font-size: 8pt;}
+
+.nosotros h2{
+	font-size: 30px;}
+
+.nosotros_interno img{
+   width: 190px;
+   height:89px;}
+
+.nosotros_interno p{
+    font-size: 15px;}
+
+.flecha_arriba{
+    height: 35px;
+    width: 35px;
+    margin: 6px;}
+
+    /* Sección Testimonios */
+
+#testimonios h2{
+   font-size: 30px;}
+
+.testimonios_cajas{
+    font-size: 6px;}  
+
+.testimonios_cajas{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 2px;
+    justify-items: center;}
+
+#testimonios p{
+  font-style: italic;
+  font-size: 12px;}
+
+    /* Sección Contacto */
+
+#contacto{
+    height: 370px;}
+
+#contacto h2{
+    font-size: 29px;}
+
+    /* Footer */
+
+.pie_pagina{
+    height: 40px;
+    font-size: 24px;}
+
+.pie_pagina a{
+    height: 32px;}
+    
+    /* PAGINA PROFESIONALES */
+
+.profesionales_tit{
+    padding-top: 20px;
+    font-size: 17px;}
+    
+.profesionales_cajas{
+    grid-template-columns: repeat(1, 1fr);}
+}
